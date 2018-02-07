@@ -4,8 +4,24 @@ library(jsonlite)
 
 url <- "https://swapi.co"
 
-raw <- GET(url)
+path <- "api"
+
+raw <- GET(url = url,path = path)
 
 rawtoChar <- rawToChar(raw$content)
 
 content <- fromJSON(rawtoChar)
+
+#########
+
+pathpeople <- "api/people"
+
+raw <- GET(url = url,path = pathpeople)
+
+rawtoChar <- rawToChar(raw$content)
+
+content <- fromJSON(rawtoChar)
+
+
+
+
