@@ -21,7 +21,7 @@ raw <- GET(url = url,path = pathpeople)
 rawtoChar <- rawToChar(raw$content)
 
 content <- fromJSON(rawtoChar)
-
+str(content$results)
 
 
 
