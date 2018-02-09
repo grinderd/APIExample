@@ -24,4 +24,7 @@ content <- fromJSON(rawtoChar)
 str(content$results)
 
 
+df <- content$results
 
+df$gender
+names(df)
